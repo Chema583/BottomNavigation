@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.ASIRFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.HomeFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/CFGSASIR"
+                    android:layout_width="323dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="44dp"
+                    android:text="CFGS ASIR"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageAsir"
+                    android:layout_width="245dp"
+                    android:layout_height="191dp"
+                    android:layout_marginBottom="70dp"
+                    android:src="@drawable/asir"
+                    app:layout_constraintBottom_toTopOf="@+id/explicacionAsir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CFGSASIR" />
+
+                <TextView
+                    android:id="@+id/queEsAsir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="298dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Qué es ASIR"
+                    app:layout_constraintBottom_toTopOf="@+id/explicacionAsir"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/explicacionAsir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="200dp"
+                    android:padding="16dp"
+                    android:text="El módulo de Administración de Sistemas Informáticos en Red (ASIR) se centra en formar profesionales en la configuración, administración y mantenimiento de sistemas informáticos y redes de comunicación dentro de una organización. En este módulo, los estudiantes adquieren conocimientos sobre instalación y configuración de sistemas operativos (tanto servidores como clientes), administración de redes locales (LAN) y servicios de red, gestión de la seguridad informática, y respaldo de la información.  Los temas abarcan el despliegue y configuración de servidores, virtualización, protocolos de red, gestión de bases de datos y políticas de seguridad. Este módulo es esencial para quienes buscan trabajar en administración de sistemas, redes y soporte técnico, siendo clave en el funcionamiento y seguridad de la infraestructura tecnológica de cualquier empresa."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

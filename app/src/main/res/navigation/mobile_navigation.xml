@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.iesoretania.ejerciciobottomnavigation.fragmentos.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_asir"
+        android:name="com.iesoretania.ejerciciobottomnavigation.fragmentos.ASIRFragment"
+        android:label="ASIR"
+        tools:layout="@layout/fragment_asir" />
+
+    <fragment
+        android:id="@+id/navigation_dam"
+        android:name="com.iesoretania.ejerciciobottomnavigation.fragmentos.DAMFragment"
+        android:label="DAM"
+        tools:layout="@layout/fragment_dam" />
+
+    <fragment
+        android:id="@+id/navigation_acercaDe"
+        android:name="com.iesoretania.ejerciciobottomnavigation.fragmentos.AcercaFragment"
+        android:label="Acerca de"
+        tools:layout="@layout/fragment_acerca" />
+    <fragment
+        android:id="@+id/DAWFragment"
+        android:name="com.iesoretania.ejerciciobottomnavigation.fragmentos.DAWFragment"
+        android:label="DAW"
+        tools:layout="@layout/fragment_daw" />
+
+</navigation>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.DAWFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.HomeFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/CFGSDAW"
+                    android:layout_width="323dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_weight="1"
+                    android:text="CFGS DAW"
+                    android:textAlignment="center"
+                    android:textSize="34sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageDAW"
+                    android:layout_width="245dp"
+                    android:layout_height="191dp"
+                    android:layout_marginBottom="70dp"
+                    android:src="@drawable/daw"
+                    app:layout_constraintBottom_toTopOf="@+id/explicacionDAW"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CFGSDAW" />
+
+                <TextView
+                    android:id="@+id/queEsDAW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="298dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Qué es DAW"
+                    app:layout_constraintBottom_toTopOf="@+id/explicacionDAW"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/explicacionDAW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="236dp"
+                    android:padding="16dp"
+                    android:text="El ciclo formativo de **Desarrollo de Aplicaciones Web (DAW)** está enfocado en la creación, diseño y mantenimiento de aplicaciones web y servicios en internet, formando a profesionales con conocimientos en programación, diseño de interfaces y gestión de bases de datos. En este ciclo se aprende a desarrollar aplicaciones interactivas y dinámicas que funcionen en navegadores y se adapten a las necesidades de usuarios y empresas.  ### Contenidos principales de DAW: 1. **Lenguajes de Programación Web**: Estudio de lenguajes como HTML, CSS y JavaScript para el desarrollo del frontend (interfaz de usuario) y de lenguajes de servidor como PHP o Python para el backend. 2. **Gestión de Bases de Datos**: Diseño y administración de bases de datos, especialmente en SQL, para almacenar y manejar la información de las aplicaciones. 3. **Desarrollo de Interfaces**: Diseño de interfaces web usables y accesibles, utilizando frameworks y herramientas de diseño para mejorar la experiencia del usuario. 4. **Frameworks y Tecnologías Modernas**: Uso de frameworks y tecnologías como Angular, React, o Django para el desarrollo rápido y estructurado de aplicaciones. 5. **Seguridad Web**: Identificación y protección contra vulnerabilidades comunes en aplicaciones web, como ataques de inyección SQL o XSS. 6. **Despliegue y Mantenimiento de Aplicaciones**: Gestión del ciclo de vida completo de una aplicación web, desde su desarrollo hasta su despliegue y mantenimiento en servidores.  Este ciclo es ideal para quienes buscan especializarse en el desarrollo de aplicaciones para internet, creando plataformas interactivas y eficientes que respondan a las demandas actuales del mercado digital."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

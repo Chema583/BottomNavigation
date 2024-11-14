@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.DAMFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CFGSDAM"
+                android:layout_width="323dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="44dp"
+                android:layout_weight="1"
+                android:text="CFGS DAM"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageDAM"
+                android:layout_width="245dp"
+                android:layout_height="191dp"
+                android:layout_marginBottom="70dp"
+                android:src="@drawable/dam"
+                app:layout_constraintBottom_toTopOf="@+id/explicacionDAM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CFGSDAM" />
+
+            <TextView
+                android:id="@+id/queEsDam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="298dp"
+                android:layout_marginBottom="25dp"
+                android:text="Qué es DAM"
+                app:layout_constraintBottom_toTopOf="@+id/explicacionDAM"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/explicacionDAM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="308dp"
+                android:padding="16dp"
+                android:text="El módulo de desarrollo de aplicaciones multiplataforma se centra en crear aplicaciones que funcionen en múltiples sistemas operativos (como Android e iOS) usando una única base de código. Esto permite a los desarrolladores escribir el código una vez y luego implementarlo en diferentes plataformas, lo que reduce significativamente el tiempo y costo de desarrollo y mantenimiento.  Este módulo abarca tecnologías y frameworks como **Flutter**, **React Native**, y **Xamarin**, que permiten acceder a interfaces nativas y funcionalidades del sistema operativo. Además, se tratan temas de diseño de interfaces adaptables, administración de recursos y optimización de rendimiento para ofrecer experiencias de usuario consistentes en distintas plataformas.   Es una solución ideal para empresas y desarrolladores que buscan rapidez, eficiencia y cobertura amplia sin comprometer la calidad de la experiencia del usuario en cada sistema operativo."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

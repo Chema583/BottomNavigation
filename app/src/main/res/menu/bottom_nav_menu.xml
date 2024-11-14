@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_asir"
+        android:icon="@drawable/asir"
+        android:title="ASIR" />
+
+    <item
+        android:id="@+id/navigation_dam"
+        android:icon="@drawable/dam"
+        android:title="DAM" />
+
+    <item
+        android:id="@+id/DAWFragment"
+        android:icon="@drawable/daw"
+        android:title="DAW" />
+
+    <item
+        android:id="@+id/navigation_acercaDe"
+        android:icon="@drawable/iconoacercade"
+        android:title="Acerca de " />
+
+</menu>
